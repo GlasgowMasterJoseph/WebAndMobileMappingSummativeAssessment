@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Florida Airports</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Florida Airports</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.js"></script>
+    <script src="https://unpkg.com/@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.min.js"></script> 
+    
+    <!-- Geocoder Script -->
+    <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.css" rel="stylesheet" />
+    <link href="https://unpkg.com/@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css" rel="stylesheet" />
+    
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    
+    <link rel="stylesheet" href="styles.css" />
+    
+  </head>
+  
+  <body>
+    
+    <div id="map">
+      <!-- Button to toggle between Monochrome and Satellite -->
+      <button id="style-toggle" class="map-toggle-button">
+        Switch to Satellite
+      </button>
+      
+      <!-- Weather info box -->
+      <div id="airport-info-box">
+        <h3>Airport Name</h3>
+        <p>Airport Code: N/A</p>
+        <p><strong>Weather:</strong> N/A</p>
+        <p><strong>Temperature:</strong> N/A°C</p>
+        <p><strong>Wind Speed:</strong> N/A km/h</p>
+      </div>
+
+      <!-- Help Button -->
+      <button id="help-button" class="help-button">?</button>
+      
+      <!-- Pop-up Box (W3 Schools, 2025) -->
+      <div id="help-popup" class="help-popup">
+        <div class="help-popup-content">
+          <h3>About This Map</h3>
+          <p>This map was designed for the Web & Mobile Mapping course at the <a href="https://www.gla.ac.uk/">University of Glasgow</a> to allow you to view the weather information at airports across Florida through the <a href="https://open-meteo.com/">OpenMeteo</a> API. The map was designed in Mapbox and the dataset used can be found <a href="https://geodata.dep.state.fl.us/datasets/FDEP::airports/">here</a>.</p>
+          <h3>Instructions</h3>
+          <p>Click on an airport to view detailed weather information, including temperature, wind speed and weather conditions.</p>
+          <p>You can make use of the right-hand side navigation controls: search, geolocate, zoom and pitch. You can also switch between monochrome and satellite map views and enable fullscreen. The scale bar is in the bottom left.</p>
+          <button id="close-help" class="close-help">Close</button>
+        </div>
+      </div>
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
