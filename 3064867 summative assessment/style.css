@@ -1,0 +1,188 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Weather info box styling */
+#airport-info-box {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  color: #dcdde1; /* Flat colours (Flatu UI Colours, 2025) */
+  padding: 15px;
+  width: 250px;
+  font-family: 'Lato', sans-serif; /* Custom font */
+  border-radius: 10px;
+  z-index: 1000;
+}
+
+#airport-info-box h3 {
+  margin-top: 0;
+}
+
+#airport-info-box p {
+  margin: 5px 0;
+}
+
+/* Map style toggle button styling */
+.map-toggle-button {
+  position: absolute;
+  bottom: 50px;
+  right: 5px;
+  padding: 10px;
+  background-color: white;
+  color: #202020;
+  font-family: 'Lato', sans-serif; /*Custom font */
+  font-size: 12pt;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer; /* Custom cursor */
+  z-index: 1000;
+  max-width: 250px;
+  text-align: center;
+}
+
+.map-toggle-button:hover {
+  background-color: #00a8ff; /* Flat colours (Flatu UI Colours, 2025) */
+  color: #f5f6fa; /* Flat colours (Flatu UI Colours, 2025) */
+}
+
+
+/* Help button styling */
+.help-button {
+  position: absolute;
+  bottom: 70px;
+  left: 25px;
+  padding: 10px;
+  background-color: white;
+  color: #202020;
+  font-family: 'Lato', sans-serif; /* Custom font */
+  font-size: 12pt;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1000;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.help-button:hover {
+  background-color: #00a8ff; /* Flat colours (Flatu UI Colours, 2025) */
+  color: #f5f6fa; /* Flat colours (Flatu UI Colours, 2025) */
+}
+
+/* Help popup styling */
+.help-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+ background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+/* Help Popup Content */
+.help-popup-content {
+  background: rgba(220, 221, 225,1.0); /* Flat colours (Flatu UI Colours, 2025) */
+  color: #202020;
+  padding: 5px;
+  border-radius: 10px;
+  width: 60%;
+  text-align: center;
+  font-family: 'Lato', sans-serif; /* Custom font */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.help-popup-content h3 {
+  font-size: 14pt;
+  font-weight: bold;
+}
+
+
+.help-popup-content p {
+  font-size: 11pt;
+  margin: 10px 0;
+}
+
+.help-popup-content button {
+  padding: 10px;
+  background-color: black;
+  color: white;
+  font-size: 12pt;
+  font-family: 'Lato', sans-serif;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.help-popup-content button:hover {
+  background-color: #00a8ff; /*Flat colour*/
+  color: #f5f6fa; /*Flat colour*/
+}
+
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+  #airport-info-box {
+    width: 200px;
+    left: 5%;
+    top: 5%;
+  }
+
+  .mapboxgl-ctrl-geocoder {
+    width: 200px!important;
+  }
+
+  .mapboxgl-ctrl-geocoder--input {
+    font-size: 10pt!important;
+  }
+
+  .map-toggle-button {
+    font-size: 10pt;
+    padding: 8px;
+  }
+  
+  .help-popup-content h3 {
+  font-size: 12pt;
+  font-weight: bold;
+  }
+
+
+.help-popup-content p {
+  font-size: 9pt;
+  margin: 10px 0;
+  }
+  
+  #airport-info-box {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #dcdde1; /* Flat colours (Flatu UI Colours, 2025) */
+  padding: 5px;
+  width: 100px;
+  font-size: 9pt;
+  font-family: 'Lato', sans-serif;
+  border-radius: 10px;
+  z-index: 1000;
+  }
+
+#airport-info-box h3 {
+  margin-top: 0;
+  }
+}
